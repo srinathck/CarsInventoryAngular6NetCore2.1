@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "Manufacturer": "Honda",
+    "Make": "Accord",
+    "Model": "EX-L",
+    "Year": 2018
+  },
+  {
+    "Id": 2,
+    "Manufacturer": "Nissan",
+    "Make": "Maxima",
+    "Model": "L",
+    "Year": 2019
+  },
+  {
+    "Id": 3,
+    "Manufacturer": "Acura",
+    "Make": "MDX",
+    "Model": "3.5L",
+    "Year": 2018
+  },
+  {
+    "Id": 4,
+    "Manufacturer": "Bentley",
+    "Make": "Continental",
+    "Model": "GT-R",
+    "Year": 2018
+  },
+  {
+    "Id": 5,
+    "Manufacturer": "Chevrolet",
+    "Make": "Camaro",
+    "Model": "ZL1",
+    "Year": 2017
+  }
+]

@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ClientApp\src\app\_content\**" />
+    <Compile Remove="ClientApp\src\app\_directives\**" />
+    <Compile Remove="ClientApp\src\app\_services\**" />
+    <Content Remove="ClientApp\src\app\_content\**" />
+    <Content Remove="ClientApp\src\app\_directives\**" />
+    <Content Remove="ClientApp\src\app\_services\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_content\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_directives\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\_services\**" />
+    <None Remove="ClientApp\src\app\_content\**" />
+    <None Remove="ClientApp\src\app\_directives\**" />
+    <None Remove="ClientApp\src\app\_services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\src\app\create\create.service.ts" />
+    <None Remove="ClientApp\src\app\delete\delete.service.ts" />
+    <None Remove="ClientApp\src\app\detail\detail.service.ts" />
+    <None Remove="ClientApp\src\app\edit\edit.service.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\create\create.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\delete\delete.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\detail\detail.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\edit\edit.service.ts" />
+  </ItemGroup>
+
+</Project>

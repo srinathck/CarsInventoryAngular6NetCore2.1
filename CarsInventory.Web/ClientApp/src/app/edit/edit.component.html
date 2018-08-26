@@ -1,0 +1,41 @@
+<div class="modal-header" *ngIf="car">
+  <h4 class="modal-title">{{ title }}</h4>
+  <button type="button" class="close" aria-label="Close" (click)="dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body" *ngIf="car">
+  <form [formGroup]="myform1">
+    <div class="form-group">
+      <label>Id</label>
+      <input type="text" class="form-control" formControlName="id" required>
+    </div>
+
+    <div class="form-group">
+      <label>Manufacturer</label>
+      <input type="text" class="form-control" formControlName="manufacturer" required>
+    </div>
+
+    <div class="form-group">
+      <label>Make</label>
+      <input type="text" class="form-control" formControlName="make" required>
+    </div>
+
+    <div class="form-group">
+      <label>Model</label>
+      <input type="text" class="form-control" formControlName="model" required>
+    </div>
+
+    <div class="form-group">
+      <label>Year</label>
+      <input type="number" class="form-control" formControlName="year" required>
+    </div>
+
+    <!--<pre>{{myform1.value | json}}</pre>-->
+  </form>
+
+</div>
+<div class="modal-footer">
+  <button type="submit" class="btn btn-primary" (click)="editCar(myform1.value)">Save</button>
+  <button type="button" class="btn btn-danger" (click)="decline()">{{ close }}</button>
+</div>
